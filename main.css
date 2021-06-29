@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+:root {
+  --blue: #9abec1;
+  --black: #333030;
+  --red: #e92424;
+}
+/* .container{
+  padding: 0 5rem;
+} */
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  position: absolute;
+  width: 80%;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+.logo .dot {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin: 0.2rem;
+  background: var(--black);
+  border-radius: 50%;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.nav-links a:last-child {
+  margin-right: 0rem;
+}
+.nav-links .active {
+  color: var(--blue);
+}
+a:hover {
+  color: var(--blue);
+}
+
+/* Hero */
+.hero {
+  background: var(--blue);
+  padding: 5rem 10% 0rem 10%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.hero-bg {
+  background: var(--black);
+  width: 65rem;
+  height: 37rem;
+  border-radius: 20rem;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  z-index: 0;
+  right: -15.3rem;
+  top: -10rem;
+}
+.hero-bg img {
+  transform: rotate(45deg);
+  height: 35rem;
+  margin-left: 7rem;
+  margin-bottom: 0rem;
+}
+.hero .intro {
+  position: absolute;
+  margin-bottom: 7rem;
+  z-index: 1;
+}
+.hero .intro h1 {
+  font-size: 70px;
+}
+.hero .intro h2 {
+  margin: 1rem 0;
+  font-size: 35px;
+}
+.hero .intro button {
+  background: var(--red);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  box-shadow: 10px 10px 24px -1px rgba(123, 123, 123, 0.75);
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+.scroll a {
+  color: var(--black);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.scroll a:hover {
+  color: var(--black);
+}
+.scroll .svg {
+  margin-right: 0.5rem;
+}
+/* brands */
+.brands {
+  min-height: 100vh;
+  padding: 7rem 10%;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+.brand:last-child {
+  margin-bottom: 0rem;
+}
+.brand h2 {
+  font-size: 60px;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+.brand img {
+  height: 15rem;
+}
+.brand .img {
+  flex: 1;
+}
+.brands .desc {
+  flex: 1;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.brand.row-reverse .img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Footer */
+footer {
+  color: white;
+  background: var(--black);
+  padding: 3rem 0;
+  text-align: center;
+}
+footer .logo {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+footer .logo .dot {
+  background: var(--blue);
+}
+footer h3 {
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+footer p {
+  width: 500px;
+  margin: 0 auto 1rem auto;
+  color: rgb(156, 156, 156);
+}
+footer .social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--blue);
+  margin-right: 0.5rem;
+}
+footer .social a:last-child{
+  margin-right: 0;
+}
+footer .social svg {
+  color: white;
+}
